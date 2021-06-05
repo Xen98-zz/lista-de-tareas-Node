@@ -1,6 +1,6 @@
 require( 'colors' );
 
-const { guardarDB, leerDB } = require( './helpers/guardarArchivo' );
+const { guardarDB, leerDB } = require( './helpers/manipularArchivo' );
 
 const { inquirerMenu, 
         pausa,
@@ -11,6 +11,7 @@ const Tareas = require( './models/tareas' );
 
 console.clear();
 
+// Funcion principal
 const main = async() => {
     
     let opt = '';
